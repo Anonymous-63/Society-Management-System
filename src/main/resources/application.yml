@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Society Management System
+    version: 1.0.0.0
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SocietyManagementSystem
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      auto-commit: false
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  servlet:
+    context-path: /api
