@@ -16,6 +16,11 @@ spring:
     hibernate:
       ddl-auto: update
 
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+
 server:
   servlet:
     context-path: /api
